@@ -1,3 +1,4 @@
+// определяет структуру данных для ингредиентов в целом
 export type TIngredient = {
   _id: string;
   name: string;
@@ -12,6 +13,7 @@ export type TIngredient = {
   image_mobile: string;
 };
 
+// определяет структуру данных для ингредиентов конструктора бургера
 export type TConstructorIngredient = TIngredient & {
   id: string;
 };

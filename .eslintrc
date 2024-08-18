@@ -8,7 +8,7 @@
     "ecmaFeatures": {
       "jsx": true
     }
-  },
+  },  
   "rules": {
     "prettier/prettier": [
       "warn",
