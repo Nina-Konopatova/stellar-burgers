@@ -29,7 +29,7 @@ interface IAuthUser {
 }
 
 // Начальное состояние для аутентификации пользователя
-const initialState: IAuthUser = {
+export const initialState: IAuthUser = {
   userData: null,
   isAuthChecked: false,
   loginUserRequest: false,
@@ -42,10 +42,7 @@ const initialState: IAuthUser = {
 // Создаем асинхронный Thunk для получения данных пользователя
 export const fetchUserData = createAsyncThunk(
   'authUser/fetchUserData',
-  async () => {
-    const response = await getUserApi();
-    return response;
-  }
+  getUserApi
 );
 
 // Создаем асинхронный Thunk для проверки аутентификации пользователя
@@ -246,3 +243,4 @@ export const selectErrorUpdate = createSelector(
 export const authUserReducer = userSlice.reducer;
 export const { setAuthChecked } = userSlice.actions;
 export const authUser = userSlice.name;
+export default userSlice.reducer;

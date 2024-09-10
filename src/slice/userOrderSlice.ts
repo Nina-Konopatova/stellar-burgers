@@ -9,7 +9,7 @@ export interface IOrderUserState {
 }
 
 // Начальное состояние для пользовательских заказов
-const initialState: IOrderUserState = {
+export const initialState: IOrderUserState = {
   orders: [],
   error: null
 };
@@ -56,3 +56,4 @@ export const userOrdersReducer = userOrdersSlice.reducer;
 export const userOrders = userOrdersSlice.name;
 export const { selectUserOrdersList, selectUserOrdersError } =
   userOrdersSlice.selectors;
+export default userOrdersSlice.reducer;
