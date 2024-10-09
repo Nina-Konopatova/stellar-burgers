@@ -11,7 +11,7 @@ interface IIngredientsState {
 }
 
 // Начальное состояние для инградиентов
-const initialState: IIngredientsState = {
+export const initialState: IIngredientsState = {
   ingredients: [],
   isLoading: false,
   error: null
@@ -63,3 +63,4 @@ export const ingredientsReducer = ingredientsSlice.reducer;
 export const ingredients = ingredientsSlice.name;
 export const { selectIngredients, selectorLoading, selectorIngredientsError } =
   ingredientsSlice.selectors;
+export default ingredientsSlice.reducer;

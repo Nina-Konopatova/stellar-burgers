@@ -1,0 +1,9 @@
+{
+    "success": true,
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YzljNmYyMTE5ZDQ1MDAxYjUwMWNkOSIsImlhdCI6MTcyNTU1NTEwNSwiZXhwIjoxNzI1NTU2MzA1fQ.EjdthvHFlL9pMA-5_V7EM7KoQy-R1Aa4irgnYYMq84Q",
+    "refreshToken": "625d9b30131442500a463cef580a468df3bd8a5fbf314b444898b1dc5a4f5f51a7bdaeb5dd0bf83c",
+    "user": {
+        "email":"konopatova_nk@mail.ru",
+        "name":"Нина "
+    }    
+}

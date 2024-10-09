@@ -8,7 +8,7 @@ export interface IConstructorState {
 }
 
 // Начальное состояние для конструктора бургера
-const initialState: IConstructorState = {
+export const initialState: IConstructorState = {
   bun: null,
   ingredients: []
 };
@@ -80,3 +80,5 @@ export const {
   clearIngredients
 } = burgerConstructorSlice.actions;
 export const { selectIngredients } = burgerConstructorSlice.selectors;
+export const BurgerConstructorActions = burgerConstructorSlice.actions;
+export default burgerConstructorSlice.reducer;

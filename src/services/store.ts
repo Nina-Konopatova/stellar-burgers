@@ -13,7 +13,7 @@ import { ingredientsReducer } from '../slice/ingredientsSlice';
 import { burgerConstructorReducer } from '../slice/burgerConstructorSlice';
 
 // объединение нескольких reducers  в один объект
-const rootReducer = combineReducers({
+export const rootReducer = combineReducers({
   feed: feedReducer,
   userOrders: userOrdersReducer,
   authUser: authUserReducer,

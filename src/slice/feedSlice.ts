@@ -14,7 +14,7 @@ export interface IFeedState {
 }
 
 // Начальное состояние для ленты заказа
-const initialState: IFeedState = {
+export const initialState: IFeedState = {
   orders: [],
   total: null,
   totalToday: null,
@@ -66,3 +66,4 @@ export const feedReducer = feedSlice.reducer;
 export const feed = feedSlice.name;
 export const { getFeedState, getFeedOrders, getErrorFeed } =
   feedSlice.selectors;
+export default feedSlice.reducer;
